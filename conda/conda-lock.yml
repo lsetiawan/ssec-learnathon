@@ -13,9 +13,9 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 59be121bca68cc88ee0ab7e60efdf5d5c9b9cf22de19d291faa03c9c34763964
-    osx-64: 765687014a1ef5983582fe6bbd181654a5bf15195a8257ed5d89daf310e97bfe
-    osx-arm64: 738e8b4cfaae4dffb0a679c42cc04749f8e336cca137b7cbeab42d880e4c5e25
+    linux-64: e558e009947e2ec06669d43ba875ddbedf48d00d23a01c77a6a126f7b5481089
+    osx-64: 7badd72a3ed1804e9737fd466542b03f3ef806d4c672d76c9ca65433e8396030
+    osx-arm64: fbf6ae442006a3bf345252ad022be79aafbf6938f65d8b461fdbf4cb487e404b
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -1417,6 +1417,18 @@ package:
     sha256: da279af2285d8f575a7f5652e83bf7f36155c4c63154e385a9d171efcc607bc1
   category: main
   optional: false
+- name: jupyterlab-myst
+  version: 2.0.1
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-myst-2.0.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 5d17ed6ef1cfe985f2fc5627e367f9da
+    sha256: 6cdbf7275829fc5a804f96709ea2122aa2ca96287b1a3621e4f289ba258f2c13
+  category: main
+  optional: false
 - name: lcms2
   version: '2.15'
   manager: conda
@@ -1877,6 +1889,18 @@ package:
   hash:
     md5: 5a7739d0f57ee64133c9d32e6507c46d
     sha256: 083a0913f5b56644051f31ac40b4eeea762a88c00aa12437817191b85a753cec
+  category: main
+  optional: false
+- name: simpervisor
+  version: 1.0.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/simpervisor-1.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: 1f6df17b16d6295a484d59e844fef6ee
+    sha256: ae06686c9b4a93c07cdbfb04d91d34c2f5e3aa3e8170922cc3b5f1fbf52e566f
   category: main
   optional: false
 - name: six
@@ -2984,7 +3008,7 @@ package:
   category: main
   optional: false
 - name: pydantic-core
-  version: 2.4.0
+  version: 2.6.0
   manager: conda
   platform: linux-64
   dependencies:
@@ -2992,10 +3016,10 @@ package:
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
     typing-extensions: '>=4.6.0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/pydantic-core-2.4.0-py310hcb5633a_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/pydantic-core-2.6.0-py310hcb5633a_0.conda
   hash:
-    md5: 10c338c86b8b23f150948de8a80e70e5
-    sha256: 1ed54895757b85206da6c880ee0cb400188c788567049497519297f01225baed
+    md5: 5aed92a803dc2807848d23aef243e56e
+    sha256: dc4c30ebba8ce3e08698d07b52afeff2d3eddbac59cd3c704f066e5c92fd924e
   category: main
   optional: false
 - name: sqlalchemy
@@ -3232,18 +3256,18 @@ package:
   category: main
   optional: false
 - name: pydantic
-  version: 2.1.1
+  version: 2.2.0
   manager: conda
   platform: linux-64
   dependencies:
     annotated-types: '>=0.4.0'
-    pydantic-core: 2.4.0
+    pydantic-core: 2.6.0
     python: '>=3.7'
     typing-extensions: '>=4.6.1'
-  url: https://conda.anaconda.org/conda-forge/noarch/pydantic-2.1.1-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/pydantic-2.2.0-pyhd8ed1ab_0.conda
   hash:
-    md5: 7964a624018707909044b509f58b937a
-    sha256: ee8a995c201e83421f3fb24f359c609900b8891d99331fc23dae32166931d744
+    md5: 829d03a8e959845357cdca2280429508
+    sha256: b1d8a1cc5f5ebb573c4c71b580b2e61b4e181b31d8fba1528cda9b06f1c9e4fc
   category: main
   optional: false
 - name: pyopenssl
@@ -3764,6 +3788,37 @@ package:
     sha256: 16fc7b40024adece716ba7227e5c123a2deccc13f946a10d9a3270493908d11c
   category: main
   optional: false
+- name: jupyter-resource-usage
+  version: 1.0.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    jupyter_server: '>=2.0.0,<3'
+    psutil: '>=5.6.0,<6'
+    python: '>=3.8'
+    pyzmq: '>=19'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyter-resource-usage-1.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: ebb0e8e9dc98d01470865fa2fef494e9
+    sha256: 48b9c99573ab8865313b6fc0d6d6c08cd555bed73ffd17d5c2cbc56b087586c4
+  category: main
+  optional: false
+- name: jupyter-server-proxy
+  version: 4.0.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    aiohttp: ''
+    importlib-metadata: ''
+    jupyter_server: '>=1'
+    python: '>=3.8'
+    simpervisor: '>=0.4'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyter-server-proxy-4.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: ca553fe175c351d66b467a3dff772ed5
+    sha256: 2cdf0ae0381b61c9951679f8fb45fa75045a623c3c88318c8f0b4eddcaf13013
+  category: main
+  optional: false
 - name: jupyterlab_server
   version: 2.24.0
   manager: conda
@@ -3821,6 +3876,22 @@ package:
   hash:
     md5: fce8108e7dfb3622873a85e495a72dda
     sha256: fc4409ff093eedb602231d2d7848e20d0f7dab1b01a05a42c06de44ba4f0c62d
+  category: main
+  optional: false
+- name: dask-labextension
+  version: 7.0.0
+  manager: conda
+  platform: linux-64
+  dependencies:
+    bokeh: '>=1.0.0,!=2.0.0'
+    distributed: '>=1.24.1'
+    jupyter-server-proxy: '>=1.3.2'
+    jupyterlab: '>=4.0.0,<5'
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/dask-labextension-7.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: bccfda61b2c35a3cec53bd3417e3d783
+    sha256: bc30bf047145227c78e1082cc80d79a754f879eb74e664237dca1710ba727605
   category: main
   optional: false
 - name: myst-parser
@@ -5218,6 +5289,18 @@ package:
     sha256: da279af2285d8f575a7f5652e83bf7f36155c4c63154e385a9d171efcc607bc1
   category: main
   optional: false
+- name: jupyterlab-myst
+  version: 2.0.1
+  manager: conda
+  platform: osx-64
+  dependencies:
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-myst-2.0.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 5d17ed6ef1cfe985f2fc5627e367f9da
+    sha256: 6cdbf7275829fc5a804f96709ea2122aa2ca96287b1a3621e4f289ba258f2c13
+  category: main
+  optional: false
 - name: lcms2
   version: '2.15'
   manager: conda
@@ -5701,6 +5784,18 @@ package:
   hash:
     md5: 5a7739d0f57ee64133c9d32e6507c46d
     sha256: 083a0913f5b56644051f31ac40b4eeea762a88c00aa12437817191b85a753cec
+  category: main
+  optional: false
+- name: simpervisor
+  version: 1.0.0
+  manager: conda
+  platform: osx-64
+  dependencies:
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/simpervisor-1.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: 1f6df17b16d6295a484d59e844fef6ee
+    sha256: ae06686c9b4a93c07cdbfb04d91d34c2f5e3aa3e8170922cc3b5f1fbf52e566f
   category: main
   optional: false
 - name: six
@@ -6805,17 +6900,17 @@ package:
   category: main
   optional: false
 - name: pydantic-core
-  version: 2.4.0
+  version: 2.6.0
   manager: conda
   platform: osx-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
     typing-extensions: '>=4.6.0'
-  url: https://conda.anaconda.org/conda-forge/osx-64/pydantic-core-2.4.0-py310h3461e44_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-64/pydantic-core-2.6.0-py310h3461e44_0.conda
   hash:
-    md5: 697e1a00773e5bc8232e862b5ae76186
-    sha256: d7876275e04618798f0d1d74a0d322a069af964a41dd1b353dc20ed3f4e4dca0
+    md5: d576cb4a1754f89efbe51fc410386d9b
+    sha256: a5830a3acf732755e9a06bba1b73e6f6fd80ea615be40ab4b284f570e94c299a
   category: main
   optional: false
 - name: pyobjc-framework-cocoa
@@ -7040,18 +7135,18 @@ package:
   category: main
   optional: false
 - name: pydantic
-  version: 2.1.1
+  version: 2.2.0
   manager: conda
   platform: osx-64
   dependencies:
     python: '>=3.7'
     annotated-types: '>=0.4.0'
     typing-extensions: '>=4.6.1'
-    pydantic-core: 2.4.0
-  url: https://conda.anaconda.org/conda-forge/noarch/pydantic-2.1.1-pyhd8ed1ab_0.conda
+    pydantic-core: 2.6.0
+  url: https://conda.anaconda.org/conda-forge/noarch/pydantic-2.2.0-pyhd8ed1ab_0.conda
   hash:
-    md5: 7964a624018707909044b509f58b937a
-    sha256: ee8a995c201e83421f3fb24f359c609900b8891d99331fc23dae32166931d744
+    md5: 829d03a8e959845357cdca2280429508
+    sha256: b1d8a1cc5f5ebb573c4c71b580b2e61b4e181b31d8fba1528cda9b06f1c9e4fc
   category: main
   optional: false
 - name: pyopenssl
@@ -7692,6 +7787,37 @@ package:
     sha256: 16fc7b40024adece716ba7227e5c123a2deccc13f946a10d9a3270493908d11c
   category: main
   optional: false
+- name: jupyter-resource-usage
+  version: 1.0.0
+  manager: conda
+  platform: osx-64
+  dependencies:
+    python: '>=3.8'
+    jupyter_server: '>=2.0.0,<3'
+    psutil: '>=5.6.0,<6'
+    pyzmq: '>=19'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyter-resource-usage-1.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: ebb0e8e9dc98d01470865fa2fef494e9
+    sha256: 48b9c99573ab8865313b6fc0d6d6c08cd555bed73ffd17d5c2cbc56b087586c4
+  category: main
+  optional: false
+- name: jupyter-server-proxy
+  version: 4.0.0
+  manager: conda
+  platform: osx-64
+  dependencies:
+    importlib-metadata: ''
+    aiohttp: ''
+    python: '>=3.8'
+    simpervisor: '>=0.4'
+    jupyter_server: '>=1'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyter-server-proxy-4.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: ca553fe175c351d66b467a3dff772ed5
+    sha256: 2cdf0ae0381b61c9951679f8fb45fa75045a623c3c88318c8f0b4eddcaf13013
+  category: main
+  optional: false
 - name: jupyterlab_server
   version: 2.24.0
   manager: conda
@@ -7749,6 +7875,22 @@ package:
   hash:
     md5: fce8108e7dfb3622873a85e495a72dda
     sha256: fc4409ff093eedb602231d2d7848e20d0f7dab1b01a05a42c06de44ba4f0c62d
+  category: main
+  optional: false
+- name: dask-labextension
+  version: 7.0.0
+  manager: conda
+  platform: osx-64
+  dependencies:
+    python: '>=3.8'
+    bokeh: '>=1.0.0,!=2.0.0'
+    distributed: '>=1.24.1'
+    jupyter-server-proxy: '>=1.3.2'
+    jupyterlab: '>=4.0.0,<5'
+  url: https://conda.anaconda.org/conda-forge/noarch/dask-labextension-7.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: bccfda61b2c35a3cec53bd3417e3d783
+    sha256: bc30bf047145227c78e1082cc80d79a754f879eb74e664237dca1710ba727605
   category: main
   optional: false
 - name: myst-parser
@@ -9146,6 +9288,18 @@ package:
     sha256: da279af2285d8f575a7f5652e83bf7f36155c4c63154e385a9d171efcc607bc1
   category: main
   optional: false
+- name: jupyterlab-myst
+  version: 2.0.1
+  manager: conda
+  platform: osx-arm64
+  dependencies:
+    python: '>=3.7'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-myst-2.0.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 5d17ed6ef1cfe985f2fc5627e367f9da
+    sha256: 6cdbf7275829fc5a804f96709ea2122aa2ca96287b1a3621e4f289ba258f2c13
+  category: main
+  optional: false
 - name: lcms2
   version: '2.15'
   manager: conda
@@ -9628,6 +9782,18 @@ package:
   hash:
     md5: 5a7739d0f57ee64133c9d32e6507c46d
     sha256: 083a0913f5b56644051f31ac40b4eeea762a88c00aa12437817191b85a753cec
+  category: main
+  optional: false
+- name: simpervisor
+  version: 1.0.0
+  manager: conda
+  platform: osx-arm64
+  dependencies:
+    python: '>=3.8'
+  url: https://conda.anaconda.org/conda-forge/noarch/simpervisor-1.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: 1f6df17b16d6295a484d59e844fef6ee
+    sha256: ae06686c9b4a93c07cdbfb04d91d34c2f5e3aa3e8170922cc3b5f1fbf52e566f
   category: main
   optional: false
 - name: six
@@ -10732,17 +10898,17 @@ package:
   category: main
   optional: false
 - name: pydantic-core
-  version: 2.4.0
+  version: 2.6.0
   manager: conda
   platform: osx-arm64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
     typing-extensions: '>=4.6.0'
-  url: https://conda.anaconda.org/conda-forge/osx-arm64/pydantic-core-2.4.0-py310had9acf8_0.conda
+  url: https://conda.anaconda.org/conda-forge/osx-arm64/pydantic-core-2.6.0-py310had9acf8_0.conda
   hash:
-    md5: 89a0181aeb36dd0324b9fb5171258cc3
-    sha256: 3ab1d8d5cae292bd239ec6e01f80ca71f477b1632fdda959c6ee99d2ef0b1337
+    md5: 6766a507af0e41193437c9411fda4ffb
+    sha256: b3e58c74778e4c2fa826b511a5df9249c33f0b0ddd55a5d7086bb17891406a45
   category: main
   optional: false
 - name: pyobjc-framework-cocoa
@@ -10967,18 +11133,18 @@ package:
   category: main
   optional: false
 - name: pydantic
-  version: 2.1.1
+  version: 2.2.0
   manager: conda
   platform: osx-arm64
   dependencies:
     python: '>=3.7'
     annotated-types: '>=0.4.0'
     typing-extensions: '>=4.6.1'
-    pydantic-core: 2.4.0
-  url: https://conda.anaconda.org/conda-forge/noarch/pydantic-2.1.1-pyhd8ed1ab_0.conda
+    pydantic-core: 2.6.0
+  url: https://conda.anaconda.org/conda-forge/noarch/pydantic-2.2.0-pyhd8ed1ab_0.conda
   hash:
-    md5: 7964a624018707909044b509f58b937a
-    sha256: ee8a995c201e83421f3fb24f359c609900b8891d99331fc23dae32166931d744
+    md5: 829d03a8e959845357cdca2280429508
+    sha256: b1d8a1cc5f5ebb573c4c71b580b2e61b4e181b31d8fba1528cda9b06f1c9e4fc
   category: main
   optional: false
 - name: pyopenssl
@@ -11618,6 +11784,37 @@ package:
     sha256: 16fc7b40024adece716ba7227e5c123a2deccc13f946a10d9a3270493908d11c
   category: main
   optional: false
+- name: jupyter-resource-usage
+  version: 1.0.0
+  manager: conda
+  platform: osx-arm64
+  dependencies:
+    python: '>=3.8'
+    jupyter_server: '>=2.0.0,<3'
+    psutil: '>=5.6.0,<6'
+    pyzmq: '>=19'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyter-resource-usage-1.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: ebb0e8e9dc98d01470865fa2fef494e9
+    sha256: 48b9c99573ab8865313b6fc0d6d6c08cd555bed73ffd17d5c2cbc56b087586c4
+  category: main
+  optional: false
+- name: jupyter-server-proxy
+  version: 4.0.0
+  manager: conda
+  platform: osx-arm64
+  dependencies:
+    importlib-metadata: ''
+    aiohttp: ''
+    python: '>=3.8'
+    simpervisor: '>=0.4'
+    jupyter_server: '>=1'
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyter-server-proxy-4.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: ca553fe175c351d66b467a3dff772ed5
+    sha256: 2cdf0ae0381b61c9951679f8fb45fa75045a623c3c88318c8f0b4eddcaf13013
+  category: main
+  optional: false
 - name: jupyterlab_server
   version: 2.24.0
   manager: conda
@@ -11675,6 +11872,22 @@ package:
   hash:
     md5: fce8108e7dfb3622873a85e495a72dda
     sha256: fc4409ff093eedb602231d2d7848e20d0f7dab1b01a05a42c06de44ba4f0c62d
+  category: main
+  optional: false
+- name: dask-labextension
+  version: 7.0.0
+  manager: conda
+  platform: osx-arm64
+  dependencies:
+    python: '>=3.8'
+    bokeh: '>=1.0.0,!=2.0.0'
+    distributed: '>=1.24.1'
+    jupyter-server-proxy: '>=1.3.2'
+    jupyterlab: '>=4.0.0,<5'
+  url: https://conda.anaconda.org/conda-forge/noarch/dask-labextension-7.0.0-pyhd8ed1ab_0.conda
+  hash:
+    md5: bccfda61b2c35a3cec53bd3417e3d783
+    sha256: bc30bf047145227c78e1082cc80d79a754f879eb74e664237dca1710ba727605
   category: main
   optional: false
 - name: myst-parser

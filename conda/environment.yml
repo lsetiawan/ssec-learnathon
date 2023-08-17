@@ -9,6 +9,10 @@ dependencies:
   # Jupyterbook dependencies
   - jupyter-book
   - jupyterlab
+  # UI dependencies
+  - dask-labextension
+  - jupyterlab-myst
+  - jupyter-resource-usage
   - jupytext
   # Scientific dependencies
   - xarray
