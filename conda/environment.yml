@@ -1,0 +1,27 @@
+name: ssec-learnathon
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # Python dependencies
+  - python=3.10
+  - pip
+  # Jupyterbook dependencies
+  - jupyter-book
+  - jupyterlab
+  - jupytext
+  # Scientific dependencies
+  - xarray
+  - dask
+  - pydantic>=2
+  # Data io dependencies
+  - fsspec
+  - s3fs
+  - zarr
+  # Cloud dependencies
+  - terraform
+  - awscli
+platforms:
+  - linux-64
+  - osx-64
+  - osx-arm64
