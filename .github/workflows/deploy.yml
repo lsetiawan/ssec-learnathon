@@ -20,14 +20,9 @@ concurrency:
 # Environment variables
 env:
     CONDA_ENV: 'ssec-learnathon'
-    DEPLOY_URL: 'https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}'
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-        name: deploy
-        url: ${{ env.DEPLOY_URL }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
