@@ -18,10 +18,13 @@ dependencies:
   - xarray
   - dask
   - pydantic>=2
+  - matplotlib
   # Data io dependencies
   - fsspec
   - s3fs
   - zarr
+  - pooch
+  - netcdf4
   # Cloud dependencies
   - terraform
   - awscli
