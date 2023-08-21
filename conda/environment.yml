@@ -17,6 +17,7 @@ dependencies:
   # Scientific dependencies
   - xarray
   - dask
+  - distributed
   - pydantic>=2
   - matplotlib
   # Data io dependencies
@@ -28,6 +29,9 @@ dependencies:
   # Cloud dependencies
   - terraform
   - awscli
+  # Pip install packages
+  - pip:
+    - graphviz
 platforms:
   - linux-64
   - osx-64
