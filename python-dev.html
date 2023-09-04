@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to SSEC Fall Learnathon 2023 &#8212; SSEC Fall Learnathon 2023</title>
+    <title>Python Scientific Software Development &#8212; SSEC Fall Learnathon 2023</title>
   
   
   
@@ -60,10 +60,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'python-dev';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Xarray + Dask = ❤️‍🔥" href="xarray-dask/overview.html" />
+    <link rel="next" title="Cloud Deployment 101" href="cloud-deploy.html" />
+    <link rel="prev" title="Dask 101" href="xarray-dask/dask-101.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -129,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -148,19 +149,19 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to SSEC Fall Learnathon 2023
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="xarray-dask/overview.html">Xarray + Dask = ❤️‍🔥</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="xarray-dask/xarray-101.html">Xarray 101</a></li>
 <li class="toctree-l2"><a class="reference internal" href="xarray-dask/dask-101.html">Dask 101</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="python-dev.html">Python Scientific Software Development</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Python Scientific Software Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cloud-deploy.html">Cloud Deployment 101</a></li>
 </ul>
 
@@ -233,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/lsetiawan/ssec-learnathon/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/lsetiawan/ssec-learnathon/issues/new?title=Issue%20on%20page%20%2Fpython-dev.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -263,7 +264,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/python-dev.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -332,7 +333,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -343,11 +346,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to SSEC Fall Learnathon 2023</h1>
+    <h1>Python Scientific Software Development</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outline">Outline</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -357,10 +368,32 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-ssec-fall-learnathon-2023">
-<h1>Welcome to SSEC Fall Learnathon 2023<a class="headerlink" href="#welcome-to-ssec-fall-learnathon-2023" title="Permalink to this heading">#</a></h1>
-<p>Coming soon …</p>
-<div class="toctree-wrapper compound">
+  <div class="tex2jax_ignore mathjax_ignore section" id="python-scientific-software-development">
+<h1>Python Scientific Software Development<a class="headerlink" href="#python-scientific-software-development" title="Permalink to this heading">#</a></h1>
+<p>There are several best practices to keep in mind in developing a Python Scientific Software.
+In this tutorial we will be going through the Scientific Python Community Software Development
+Guide to learn these best practices.</p>
+<p>The guide can be found at <a class="reference external" href="https://learn.scientific-python.org/development/">https://learn.scientific-python.org/development/</a>.</p>
+<div class="section" id="outline">
+<h2>Outline<a class="headerlink" href="#outline" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://learn.scientific-python.org/development/tutorials/">Development Tutorials</a></p></li>
+<li><p><a class="reference external" href="https://github.com/uw-ssec/rse-guidelines/blob/main/conventional-commits.md">Commit message convention</a></p>
+<ul>
+<li><p>Example: <a class="reference external" href="https://github.com/OSOceanAcoustics/echopype/pull/1124">OSOceanAcoustics/echopype#1124</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://learn.scientific-python.org/development/guides/coverage/">Code Coverage</a></p></li>
+<li><p><a class="reference external" href="https://learn.scientific-python.org/development/guides/gha-basic/">Github Actions Intro</a></p></li>
+<li><p><a class="reference external" href="https://learn.scientific-python.org/development/guides/gha-pure/">Package publishing</a></p></li>
+<li><p><a class="reference external" href="https://learn.scientific-python.org/development/guides/tasks/">Nox for community</a></p></li>
+<li><p><a class="reference external" href="https://github.com/scientific-python/cookie#cookie">Cookiecutter</a></p>
+<ul>
+<li><p>Example: <a class="reference external" href="https://github.com/braingeneers/braingeneerspy/pull/9">braingeneers/braingeneerspy#9</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://scientific-python.github.io/repo-review/">Repo Review</a></p></li>
+</ul>
 </div>
 </div>
 
@@ -395,12 +428,21 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="xarray-dask/dask-101.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Dask 101</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="xarray-dask/overview.html"
+       href="cloud-deploy.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Xarray + Dask = ❤️‍🔥</p>
+        <p class="prev-next-title">Cloud Deployment 101</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -413,6 +455,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outline">Outline</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

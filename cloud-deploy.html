@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to SSEC Fall Learnathon 2023 &#8212; SSEC Fall Learnathon 2023</title>
+    <title>Cloud Deployment 101 &#8212; SSEC Fall Learnathon 2023</title>
   
   
   
@@ -60,10 +60,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cloud-deploy';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Xarray + Dask = ❤️‍🔥" href="xarray-dask/overview.html" />
+    <link rel="prev" title="Python Scientific Software Development" href="python-dev.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -129,7 +129,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -148,20 +148,20 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to SSEC Fall Learnathon 2023
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="xarray-dask/overview.html">Xarray + Dask = ❤️‍🔥</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="xarray-dask/xarray-101.html">Xarray 101</a></li>
 <li class="toctree-l2"><a class="reference internal" href="xarray-dask/dask-101.html">Dask 101</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="python-dev.html">Python Scientific Software Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cloud-deploy.html">Cloud Deployment 101</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cloud Deployment 101</a></li>
 </ul>
 
     </div>
@@ -233,7 +233,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/lsetiawan/ssec-learnathon/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/lsetiawan/ssec-learnathon/issues/new?title=Issue%20on%20page%20%2Fcloud-deploy.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -263,7 +263,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/cloud-deploy.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -343,7 +343,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to SSEC Fall Learnathon 2023</h1>
+    <h1>Cloud Deployment 101</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -357,11 +357,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="welcome-to-ssec-fall-learnathon-2023">
-<h1>Welcome to SSEC Fall Learnathon 2023<a class="headerlink" href="#welcome-to-ssec-fall-learnathon-2023" title="Permalink to this heading">#</a></h1>
-<p>Coming soon …</p>
-<div class="toctree-wrapper compound">
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="cloud-deployment-101">
+<h1>Cloud Deployment 101<a class="headerlink" href="#cloud-deployment-101" title="Permalink to this heading">#</a></h1>
+<p>In this tutorial we will be learning about cloud deployment with <a class="reference external" href="https://developer.hashicorp.com/terraform">Terraform</a>
+by going through their tutorial found at <a class="reference external" href="https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code">here</a>.
+This tutorial is specifically for <a class="reference external" href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs">AWS</a>, but Terraform is cloud agnostic and can be used with Azure and Google Cloud Platform (GCP) as well.</p>
+<p>Fun fact: The original creator of Terraform, Mitchell Hashimoto is a UW CSE Alumni class of 2011!</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -395,14 +396,14 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="right-next"
-       href="xarray-dask/overview.html"
-       title="next page">
+    <a class="left-prev"
+       href="python-dev.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Xarray + Dask = ❤️‍🔥</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Python Scientific Software Development</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
