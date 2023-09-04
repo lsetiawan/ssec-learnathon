@@ -13,9 +13,9 @@
 version: 1
 metadata:
   content_hash:
-    linux-64: 9b27b59857aa4904e68901489f73198397bd7270953895a00995321abe406502
-    osx-64: 07e7ed22783c36d3746b94e14c26fcaf3f95da5637dbeaa1f88e17ac4cca7c24
-    osx-arm64: 14d76302a6c9d48b63b1be5b5305e22ce92d0786d7ff198d14031ec8e72ae74a
+    linux-64: 60f0669f0fecf9a14c243d1e18ba6b6cc166a4c38ab7781f02fee6f1b3ab7ffd
+    osx-64: 98ece36b57d96b92881c87d7cc9db7f31a6b296a7667ded919b6b718b17d2535
+    osx-arm64: cef0016c700367c8d632d28cfb7ec988112fd69247437696e9d58314950ffa7a
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -5579,6 +5579,16 @@ package:
     sha256: c5710ae7bb7465f25a29cc845d9fb6ad0ea561972d796d379fcb48d801e96d6d
   category: main
   optional: false
+- name: graphviz
+  version: 0.20.1
+  manager: pip
+  platform: linux-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/de/5e/fcbb22c68208d39edff467809d06c9d81d7d27426460ebc598e55130c1aa/graphviz-0.20.1-py3-none-any.whl
+  hash:
+    sha256: 587c58a223b51611c0cf461132da386edd896a029524ca61a1462b880bf97977
+  category: main
+  optional: false
 - name: aws-c-common
   version: 0.9.0
   manager: conda
@@ -9909,6 +9919,16 @@ package:
     sha256: c5710ae7bb7465f25a29cc845d9fb6ad0ea561972d796d379fcb48d801e96d6d
   category: main
   optional: false
+- name: graphviz
+  version: 0.20.1
+  manager: pip
+  platform: osx-64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/de/5e/fcbb22c68208d39edff467809d06c9d81d7d27426460ebc598e55130c1aa/graphviz-0.20.1-py3-none-any.whl
+  hash:
+    sha256: 587c58a223b51611c0cf461132da386edd896a029524ca61a1462b880bf97977
+  category: main
+  optional: false
 - name: aws-c-common
   version: 0.9.0
   manager: conda
@@ -14234,5 +14254,15 @@ package:
   hash:
     md5: 0612e497d7860728f2cda421ea2aec09
     sha256: c5710ae7bb7465f25a29cc845d9fb6ad0ea561972d796d379fcb48d801e96d6d
+  category: main
+  optional: false
+- name: graphviz
+  version: 0.20.1
+  manager: pip
+  platform: osx-arm64
+  dependencies: {}
+  url: https://files.pythonhosted.org/packages/de/5e/fcbb22c68208d39edff467809d06c9d81d7d27426460ebc598e55130c1aa/graphviz-0.20.1-py3-none-any.whl
+  hash:
+    sha256: 587c58a223b51611c0cf461132da386edd896a029524ca61a1462b880bf97977
   category: main
   optional: false
