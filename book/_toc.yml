@@ -6,3 +6,4 @@ root: intro
 chapters:
   - file: xarray-dask/overview
   - file: python-dev
+  - file: cloud-deploy
