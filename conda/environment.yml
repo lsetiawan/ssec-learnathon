@@ -22,7 +22,7 @@ dependencies:
   - matplotlib
   # Data io dependencies
   - fsspec
-  - s3fs
+  - s3fs>=2021.8.0
   - zarr
   - pooch
   - netcdf4
